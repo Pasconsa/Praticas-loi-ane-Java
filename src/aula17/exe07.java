@@ -19,7 +19,7 @@ public static void main(String[] args) {
 	System.out.println("Digite os numeros");
 	 num =sc.nextInt();
 	 
-	 if(num > maior) {
+	 if(num > maior) {  //se o numero for maior que a variavel maior então maior vai ser o numero
 		 maior = num;
 	 }
 }
