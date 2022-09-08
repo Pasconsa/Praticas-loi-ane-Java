@@ -16,8 +16,7 @@ public class Exe05 {
 		int popB;
 		double taxA;
 		double taxB;
-		double contAno=0;
-		
+	
 
 		boolean valido = false;
 		do {
@@ -76,7 +75,8 @@ public class Exe05 {
 			}
 		} while (!valido);
 
-	
+		double contAno=0;
+		
 
 		while (popA < popB) {
 

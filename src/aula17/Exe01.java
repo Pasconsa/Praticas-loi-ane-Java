@@ -23,7 +23,8 @@ public class Exe01 {
 			}else {
 				System.out.println("nota invalida");
 			}
-			}while (notaValida=false);
-
+			
+		}while (notaValida==false);
+	
 	}
 }
