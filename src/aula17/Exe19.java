@@ -9,7 +9,7 @@ package aula17;
 import java.io.InvalidObjectException;
 import java.util.Scanner;
 
-public class Ex019 {
+public class Exe19 {
 	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);
 
