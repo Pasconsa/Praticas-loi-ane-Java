@@ -18,7 +18,7 @@ public class Exe14 {
 		int impares = 0;
 		int num;
 
-		for (int i = 0; i < 10; i++) {
+		for (int i = 0; i < 10; i++) {   // digite 10 digitos
 			System.out.println("Digite o numero :");
 			num = sc.nextInt();
 
@@ -28,7 +28,8 @@ public class Exe14 {
 				impares++;
 			}
 
-		}
-		System.out.println("Quantidade pares " + pares + " Quantidade impares " + impares);
+		}System.out.println("Quantidade pares " + pares) ; 
+		 System.out.println( " Quantidade impares " + impares);
 	}
+		
 }
