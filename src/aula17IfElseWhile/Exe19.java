@@ -4,7 +4,7 @@ ou não um número primo. Um número primo é aquele que é divisível
 somente por ele mesmo e por 1.
  */
 
-package aula17;
+package aula17IfElseWhile;
 
 import java.io.InvalidObjectException;
 import java.util.Scanner;

@@ -1,4 +1,4 @@
-package aula17;
+package aula17IfElseWhile;
 
 /*Faça um programa que imprima na tela apenas os números ímpares
 entre 1 e 50 */

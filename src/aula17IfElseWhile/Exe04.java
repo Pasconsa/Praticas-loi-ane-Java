@@ -1,4 +1,4 @@
-package aula17;
+package aula17IfElseWhile;
 
 /*
  * Supondo que a população de um país A seja da ordem de 80000

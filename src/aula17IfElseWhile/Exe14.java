@@ -1,4 +1,4 @@
-package aula17;
+package aula17IfElseWhile;
 
 import java.util.Iterator;
 import java.util.Scanner;
