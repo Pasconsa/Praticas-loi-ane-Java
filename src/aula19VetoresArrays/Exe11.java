@@ -2,7 +2,7 @@
 que defina e escreva a quantidade de elementos armazenados neste
 vetor que são pares.
 */
-package aula18VetoresArrays;
+package aula19VetoresArrays;
 
 import java.util.Scanner;
 

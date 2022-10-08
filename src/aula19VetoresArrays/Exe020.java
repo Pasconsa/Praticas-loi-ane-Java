@@ -5,7 +5,7 @@
 	21.A[i] = cotação do dolar * i, para todo i variando de 1 até 20.
  */
 
-package aula18VetoresArrays;
+package aula19VetoresArrays;
 
 import java.util.Scanner;
 

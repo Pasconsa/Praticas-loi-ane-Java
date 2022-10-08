@@ -4,7 +4,7 @@ que nos vetor B e C serão armazenados o valores pares e ímpares de
 A, respectivamente.
  */
 
-package aula18VetoresArrays;
+package aula19VetoresArrays;
 
 import java.util.Scanner;
 
