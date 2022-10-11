@@ -34,7 +34,18 @@ public class Exe04Matriz {
 			opcao = scan.nextByte();
 			
 			if (opcao == 1) { //adicionar compromisso
-			
+				
+				boolean diaValido = false;
+				int dia;
+				while (!diaValido) { 
+				System.out.println("Entre com o dia do mês");
+					dia = scan.nextInt();
+					if (dia > 0 && dia <= 31) {
+						diaValido= true;
+					}else {
+						System.out.println("Dia invalido digite novamente");
+					}
+				}			
 			} else if ( opcao == 2) {  //verificar compromisso
 				
 			} else if ( opcao == 0) {
