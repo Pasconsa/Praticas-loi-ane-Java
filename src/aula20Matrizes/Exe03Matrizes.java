@@ -6,6 +6,12 @@ quantidade de números pares, a quantidade de números ímpares.
 
 package aula20Matrizes;
 
+import java.util.Scanner;
+
 public class Exe03Matrizes {
 
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+	}
 }
