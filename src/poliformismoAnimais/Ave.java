@@ -1,6 +1,6 @@
 package poliformismoAnimais;
 
-public abstract class Ave extends Animal {
+public class Ave extends Animal {
 	
 	private String corPena;
 	
@@ -10,19 +10,19 @@ public abstract class Ave extends Animal {
 	
 	@Override
 	public void locomover() {
-		// TODO Auto-generated method stub
+		System.out.println("voando");
 		
 	}
 
 	@Override
 	public void alimentar() {
-		// TODO Auto-generated method stub
+		System.out.println("comendo frutas");
 		
 	}
 
 	@Override
 	public void emitirSom() {
-		// TODO Auto-generated method stub
+		System.out.println("som de ave");
 		
 	}
 	public String getCorPena() {
