@@ -15,7 +15,7 @@ public static void main(String[] args) {
 	
 	System.out.println();
 	
-	System.out.println("Reação do cachorro");
+	System.out.println("Reacao do cachorro");
 	c.reagir(false);
 	c.reagir("Toma comida");
 	c.reagir(10, 5);
