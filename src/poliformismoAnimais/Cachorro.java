@@ -1,5 +1,6 @@
 package poliformismoAnimais;
 
+
 public class Cachorro extends Mamifero  {
 
 	public void enterrarOsso() {
@@ -9,5 +10,7 @@ public class Cachorro extends Mamifero  {
 	public void abanarRabo() {
 		System.out.println("Abanar o rabo");
 	}
+	
+
 	
 }

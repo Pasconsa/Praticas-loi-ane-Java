@@ -1,5 +1,7 @@
 package poliformismoAnimais;
 
+import poliformismoAnimais.Animal;
+
 public class Mamifero extends Animal {
 	
 	private String corPelo;
