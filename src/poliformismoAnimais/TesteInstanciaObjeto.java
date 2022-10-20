@@ -1,5 +1,6 @@
 package poliformismoAnimais;
 
+
 public class TesteInstanciaObjeto {
 public static void main(String[] args) {
 	
@@ -8,9 +9,12 @@ public static void main(String[] args) {
 	Peixe p = new Peixe ();
 	Ave a = new Ave ();
 	
-	m.alimentar();
-	m.emitirSom();
-	m.locomover();
+	Cachorro c = new Cachorro();
+	Canguru k = new Canguru ();
+	
+	
+	c.locomover();    // Exemplo de sobreposição = mesma assinatura com classes diferentes
+	k.locomover();
 }
 	
 }
