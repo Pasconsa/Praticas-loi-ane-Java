@@ -40,6 +40,10 @@ public class TesteGame {
 		System.out.println("Produtora : " + g1.getProdutora()); 
 		System.out.println("Ano lancameto : " + g1.getAnoLancamento());
 		
+		System.out.println();
+		
+		System.out.println(cs2);   //impressão to string
+		
 	}
 	
 }

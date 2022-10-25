@@ -1,9 +1,9 @@
 package registroColecaoGames;
 
+import java.util.Objects;
 
 public class Console extends ObjetoFisicoGame{
 	
-	private Long id;
 	private String marca;
 	private int geraçao;
 
@@ -33,6 +33,34 @@ public class Console extends ObjetoFisicoGame{
 
 	public void setGeraçao(int geraçao) {
 		this.geraçao = geraçao;
+	}
+	
+	
+	
+	
+	//Equals e HashcoDe
+@Override
+	public int hashCode() {
+		return Objects.hash(geraçao, marca);
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		Console other = (Console) obj;
+		return geraçao == other.geraçao && Objects.equals(marca, other.marca);
+	}
+
+	//to string
+	@Override
+	public String toString() {
+		return "Console [marca=" + marca + ", geraçao=" + geraçao + ", nome=" + nome + ", anoLancamento="
+				+ anoLancamento + ", tipoMidia=" + tipoMidia + "]";
 	}
 	
 	
