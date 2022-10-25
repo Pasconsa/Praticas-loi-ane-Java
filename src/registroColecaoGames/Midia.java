@@ -1,4 +1,4 @@
-package registroColeçãoGames;
+package registroColecaoGames;
 
 public enum Midia {
 

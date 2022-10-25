@@ -1,14 +1,17 @@
-package registroColeçãoGames;
+package registroColecaoGames;
 
-import java.security.Identity;
 
 public class Game extends ObjetoFisicoGame {
 	
-	private Long id;
 	private String produtora;
 	private int quantJogadores;
 	
 	
+	Game(String nome_, String produtora_, int anoLancamento_){   //construtor com parametros
+		this.nome = nome_;
+		this.produtora = produtora_;
+		this.anoLancamento = anoLancamento_;
+	}
 	
 	
 
