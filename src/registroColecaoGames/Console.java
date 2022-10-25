@@ -5,18 +5,37 @@ import java.util.Objects;
 public class Console extends ObjetoFisicoGame{
 	
 	private String marca;
-	private int geraçao;
+	private int geracao;
+	private Game[] games;   //associação 1 console tem muitos games
 
-	int calcularAnos() {                       //metodo com retorno
+	int calcularAnos() {                       //metodo com retorno    //sobrecarga poliformismo
 		return 2022 - getAnoLancamento();
 
 	}
 	
-	int calcularAnos(int esteAno, int anoLancamento) {  //metodo com parametros
+	int calcularAnos(int esteAno, int anoLancamento) {  //metodo com parametros  //sobrecarga poliformismo
 		int calcularAnos = esteAno - anoLancamento;
 		return calcularAnos;
 	}
 
+	
+	
+	
+	public Console() {
+	
+	}
+
+	public Console(String nome_, String marca_, int anoLancamento_, Midia tipoMidia_ , int geracao_){   //construtor com parametros
+		this.nome = nome_;
+		this.marca = marca_;
+		this.anoLancamento = anoLancamento_;
+		this.tipoMidia = tipoMidia_;
+		this.geracao = geracao_;
+	}
+	
+	
+	
+	
 	
 
 	public String getMarca() {
@@ -27,21 +46,27 @@ public class Console extends ObjetoFisicoGame{
 		this.marca = marca;
 	}
 
-	public int getGeraçao() {
-		return geraçao;
+	public int getGeracao() {
+		return geracao;
 	}
 
-	public void setGeraçao(int geraçao) {
-		this.geraçao = geraçao;
+	public void setGeracao(int geracao) {
+		this.geracao = geracao;
 	}
 	
 	
-	
-	
-	//Equals e HashcoDe
+	public Game[] getGames() {
+		return games;
+	}
+
+	public void setGames(Game[] games) {
+		this.games = games;
+	}
+
+//Equals e HashcoDe
 @Override
 	public int hashCode() {
-		return Objects.hash(geraçao, marca);
+		return Objects.hash(geracao, marca);
 	}
 
 	@Override
@@ -53,13 +78,13 @@ public class Console extends ObjetoFisicoGame{
 		if (getClass() != obj.getClass())
 			return false;
 		Console other = (Console) obj;
-		return geraçao == other.geraçao && Objects.equals(marca, other.marca);
+		return geracao == other.geracao && Objects.equals(marca, other.marca);
 	}
 
 	//to string
 	@Override
 	public String toString() {
-		return "Console [marca=" + marca + ", geraçao=" + geraçao + ", nome=" + nome + ", anoLancamento="
+		return "Console [marca=" + marca + ", geraçao=" + geracao + ", nome=" + nome + ", anoLancamento="
 				+ anoLancamento + ", tipoMidia=" + tipoMidia + "]";
 	}
 	

@@ -6,25 +6,56 @@ public class TesteGame {
 
 	public static void main(String[] args) {
 		
-		Console cs1 = new Console ();  //instancai com construtor vazio
-		cs1.setNome("Super Nintendo");
-		cs1.setMarca("Nintendo");
-		cs1.setAnoLancamento(1990);   
-		cs1.setGeraçao(4);
-		cs1.setTipoMidia(Midia.FITA);
+		Console cs1 = new Console ("Super Nintendo", "Nintendo", 1990, Midia.FITA, 4);  //instancia usando construtor com parametros
 		
 		
-		Console cs2 = new Console ();
+		Console cs2 = new Console ();  //instancia com construtor vazio
 		cs2.setNome("Playstation");
 		cs2.setMarca("Sony");
 		cs2.setAnoLancamento(1994);   
-		cs2.setGeraçao(5);
+		cs2.setGeracao(5);
 		cs2.setTipoMidia(Midia.CD);
 		
-		Game g1 = new Game("Street Fighter 2", "Capcom", 1992);  //usando construtor com parametros
 		
-	
 		
+// instancia de games
+		
+		Game g1 = new Game();
+		g1.setNome("Street fighter 2");
+		g1.setProdutora("Capcom");
+		g1.setAnoLancamento(1992);   
+		g1.setGenero("Luta");
+		g1.setTipoMidia(Midia.FITA);
+		
+		
+		Game g2 = new Game();
+		g2.setNome("Batman returns");
+		g2.setProdutora("Konami");
+		g2.setAnoLancamento(1993);   
+		g2.setGenero("Acao");
+		g2.setTipoMidia(Midia.FITA);
+		
+		//array setar na classe Console os games
+		Game[] games = new Game[2];
+		games[0] = g1;
+		games[1] = g2;
+		
+		
+		//Impressão Arrays setar na classe Console os games 1 para muitos
+		
+		System.out.println(" associacao 1 console tem muitos games = " + cs1.getNome());
+		System.out.println();
+		
+		cs1.setGames(games);
+			if (cs1 != null && cs1.getGames() != null) {            
+				for(Game g : cs1.getGames()) {
+					System.out.println(g.getNome() +" " + g.getGenero());
+				}
+			}
+		
+			System.out.println("---------------------------");
+		
+		//Impressão
 		
 		System.out.println("Nome console : " + cs2.getNome());
 		System.out.println("Calcular tempo : " + cs2.calcularAnos() + " anos");  
@@ -36,14 +67,11 @@ public class TesteGame {
 		
 		System.out.println();
 		
-		System.out.println("Nome do Game : " + g1.getNome());
-		System.out.println("Produtora : " + g1.getProdutora()); 
-		System.out.println("Ano lancameto : " + g1.getAnoLancamento());
+		System.out.println("---------- Lista games ---------------");
 		
+		System.out.println(g1);   //impressão to string
 		System.out.println();
-		
-		System.out.println(cs2);   //impressão to string
-		
+		System.out.println(g2);
 	}
 	
 }
