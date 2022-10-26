@@ -35,10 +35,14 @@ public class TesteGame {
 		g2.setGenero("Acao");
 		g2.setTipoMidia(Midia.FITA);
 		
+		
+		try {	                                       //adicionado estrutura try catch excessão
+			
 		//array setar na classe Console os games
-		Game[] games = new Game[2];
+		Game[] games = new Game[1];
 		games[0] = g1;
 		games[1] = g2;
+		
 		
 		
 		//Impressão Arrays setar na classe Console os games 1 para muitos
@@ -53,6 +57,10 @@ public class TesteGame {
 				}
 			}
 		
+		}catch (ArrayIndexOutOfBoundsException exception) {									//adicionado estrutura  catch excessão
+			System.out.println("Excessão ao acessar indce do vetor que não existe");
+		}
+			
 			System.out.println("---------------------------");
 		
 		//Impressão
