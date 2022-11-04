@@ -1,5 +1,6 @@
 package registroColecaoGames;
 
+
 import java.util.Objects;
 
 public class Console extends ObjetoFisicoGame{
@@ -32,8 +33,6 @@ public class Console extends ObjetoFisicoGame{
 		this.tipoMidia = tipoMidia_;
 		this.geracao = geracao_;
 	}
-	
-	
 	
 	
 	

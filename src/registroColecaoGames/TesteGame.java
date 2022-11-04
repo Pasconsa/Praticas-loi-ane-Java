@@ -39,7 +39,7 @@ public class TesteGame {
 		try {	                                       //adicionado estrutura try catch excessão
 			
 		//array setar na classe Console os games
-		Game[] games = new Game[1];
+		Game[] games = new Game[2];
 		games[0] = g1;
 		games[1] = g2;
 		
