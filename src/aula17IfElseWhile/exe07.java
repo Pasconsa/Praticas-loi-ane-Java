@@ -1,6 +1,6 @@
 package aula17IfElseWhile;
 
-import java.awt.desktop.SystemSleepEvent;
+
 import java.util.Scanner;
 
 /*07 Faça um programa que leia 5 números e informe o maior número*/
