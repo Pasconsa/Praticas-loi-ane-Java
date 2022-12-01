@@ -1,5 +1,6 @@
 package aula17IfElseWhile;
 
+import java.security.DrbgParameters.NextBytes;
 import java.util.Scanner;
 
 import javax.xml.stream.util.EventReaderDelegate;
@@ -17,85 +18,75 @@ public class Exe03 {
 
 	public static void main(String[] args) {
 		
-		Scanner sc = new Scanner(System.in);
+		Scanner sc = new Scanner (System.in);
 		
-		boolean infoValida = false;
-		
-		do {
-			System.out.println("Entre com o nome ");
-			String nome = sc.next();
-			
-			if(nome.length() >= 3) {
-				infoValida = true;
-			}else {
-				System.out.println("Nome precisa no minimo de 3 caracteres.");
-			}
-		}while(!infoValida);
-		
-		
-		
-		infoValida = false;
-		
-		do {
-			System.out.println("Entre com uma idade ");
-			double idade = sc.nextDouble();
-			
-			if(idade >=0 && idade <=150) {
-				infoValida = true;
-			}else {
-				System.out.println("escolha uma idade entre 0 a 150.");
-			}
-		}while(!infoValida);
-		
-	
-	
-
-	
-infoValida = false;
+		boolean informValida = false;
 	
 	do {
-		System.out.println("Digite o salario:");
-		double salario = sc.nextDouble();
-		
-		if(salario > 0) {
-			infoValida = true;
-		}else {
-			System.out.println("salario não pode ser menor que zero");
-		}
-	}while(!infoValida);
+	System.out.println("Coloque um nome :");
+	String nome = sc.next();
+	if(nome.length() > 3) {                        // Colcocar o tamanho do caractere do nome
+		informValida = true;
+	}else {
+		System.out.println("Digite um nome maior que 3 caracteres");
+	}
+	} while (!informValida);
 	
 	
-infoValida = false;
-	
-	do {
-		System.out.println("Digite o sexo:");
-		String sexo = sc.next();
-		
-		if(sexo.equalsIgnoreCase("f")  || sexo.equalsIgnoreCase("m")) {
-			infoValida = true;
-		}else {
-			System.out.println("o sexo deve ser 'f' ou 'm'.");
-		}
-	}while(!infoValida);
-	
-	
-	
-	infoValida = false;
+     
+	informValida = false;   // a cada pergunta cria um novo bloolean
 	
 	do {
-		System.out.println("Digite a primeira letra do estado civil");
-		String estc = sc.next();
+	System.out.println("Escreva uma idade entre 0 a 150 :");
+	int idade = sc.nextInt();
+	if (idade >= 0 && idade <= 150) {
+		informValida = true;
+	}else {
+		System.out.println("Erro Escreva idade novamente");
+	}
+	}while (!informValida);
+	
+	
+	informValida = false;
+	do {
+	System.out.println("Adiciona um salario");
+	int sal = sc.nextInt();
+	if (sal > 0 ) {
+		informValida = true;
+	}else {
+		System.out.println("Digite um valo acima de zero");
+	}
+	}while (!informValida);
+	
+	
+	
+	informValida = false;
+	 do {
+	System.out.println("Digite o seu sexo F ou M :");
+    String sex = sc.next();
+   
+    	if ( sex.equalsIgnoreCase("f") || sex.equalsIgnoreCase("m") ) {                                // colocar equals.ignoreCase para validar letra.
+    		informValida = true;
+    	}else {
+    		System.out.println("o sexo deve ser F ou M");
+    	}
+    	}while (!informValida);
+    
+    
+    informValida = false;
+    do {
+    System.out.println("Digite o estado civil s - c - v -d :");
+    String est = sc.next();
+    
+	    if ( est.equalsIgnoreCase("s") || est.equalsIgnoreCase("c") || est.equalsIgnoreCase("v") || est.equalsIgnoreCase("d") ) {                                // colocar equals.ignoreCase para validar letra.
+			informValida = true;
+	    }else {System.out.println("Digitar  a letra do estado civil ");
 		
-		if(estc.equalsIgnoreCase("s") || estc.equalsIgnoreCase("c") || estc.equalsIgnoreCase("v") || estc.equalsIgnoreCase("d")  ) {
-			infoValida = true;
-		}else {
-			System.out.println("digite a primeira letra do xeu estado civil.");
-		}
-	}while(!infoValida);
+	    	}
 	
+    	}while (!informValida);
 	
-	
-}
+	}
 	
 	
 }

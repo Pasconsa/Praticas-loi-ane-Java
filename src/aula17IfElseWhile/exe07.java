@@ -1,5 +1,6 @@
 package aula17IfElseWhile;
 
+import java.awt.desktop.SystemSleepEvent;
 import java.util.Scanner;
 
 /*07 Faça um programa que leia 5 números e informe o maior número*/
@@ -8,22 +9,25 @@ public class exe07 {
 
 public static void main(String[] args) {
 	
-	Scanner sc = new Scanner (System.in);
-	
-	int num;
-	
-	int maior = Integer.MIN_VALUE;
-	
-	for(int i=0; i<5; i++) {
-	
-	System.out.println("Digite os numeros");
-	 num =sc.nextInt();
-	 
-	 if(num > maior) {  //se o numero for maior que a variavel maior então maior vai ser o numero
-		 maior = num;
-	 }
+Scanner sc = new Scanner(System.in);
+
+double num ;
+
+double max = Integer.MIN_VALUE;            // min_value = menor valor possivel
+
+for(int i =0; i < 5 ; i++) {
+
+System.out.println("Digite o numero");
+
+num = sc.nextInt();
+
+if(num > max) {  //se o numero for maior que a variavel max então maior vai ser o numero
+	num = max;
 }
-	System.out.println("O maior numero digitado foi: " + maior);
+
+
+}System.out.println("O valor maximo = " + max);
+	
 	}
 
 

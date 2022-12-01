@@ -12,20 +12,24 @@ public class Exe04 {
 
 	public static void main(String[] args) {
 
-		int popA = 80000;
-		int popB = 200000;
-		int contAno = 0;
+	double popA = 80000;
+	double popB = 200000;
+	double contAno = 0;
+	
+	while(popA < popB) {
+		
+		popA += popA * 0.03;
+		popB += popB * 0.015;
+		
+		contAno ++;
+		
+	
+		
+	}
+	System.out.println("Populacao A: " + popA);
+	System.out.println("Populacao B: " + popB);
+	System.out.println("Quantos anos: " + contAno);
 
-		while (popA < popB) {
-
-			popA += (popA / 100) * 3;
-			popB += (popB / 100) * 1.5;
-			contAno++;
-		}
-
-		System.out.println("População A: " + popA);
-		System.out.println("População B: " + popB);
-		System.out.println("Quantos anos: " + contAno);
-
+	
 	}
 }

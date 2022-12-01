@@ -8,7 +8,7 @@ public class Exe00WhileDoWhile {
 		
 		
 		int i =1;
-		int max = 10 ;
+		int max = 5 ;
 		
 		System.out.println("Contando ate o max = " + max);
 		
