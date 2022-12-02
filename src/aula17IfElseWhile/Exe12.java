@@ -13,16 +13,12 @@ public class Exe12 {
 		
 		Scanner sc = new Scanner (System.in);
 		
+		System.out.println("Qual numero deseja ver a tabuada");
+		int n1 = sc.nextInt();
 		
-		System.out.println("Entre com um numero para tabuada");
-		int n =sc.nextInt();
-		
-		System.out.println("tabuada de " + n);
-		
-		for(int i=1 ; i<=10; i++) {
-			System.out.println(n + " X "+ i + "=" + (n*i));
+		for(int i = 1; i <=10 ; ++i) {
+			System.out.println(i + "X" + n1 + "= " + (n1*i));
 		}
-		
 	}
 
 }
