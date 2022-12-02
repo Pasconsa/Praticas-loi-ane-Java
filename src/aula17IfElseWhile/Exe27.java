@@ -1,15 +1,14 @@
 /*
- * 21 Faça um programa que peça um número inteiro e determine se ele é
-ou não um número primo. Um número primo é aquele que é divisível
-somente por ele mesmo e por 1.
+ * 27 Faça um programa que calcule o número médio de alunos por turma.
+Para isto, peça a quantidade de turmas e a quantidade de alunos para
+cada turma. As turmas não podem ter mais de 40 alunos
  */
 
 package aula17IfElseWhile;
 
-import java.io.InvalidObjectException;
 import java.util.Scanner;
 
-public class Exe19 {
+public class Exe27 {
 	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);
 
@@ -18,21 +17,22 @@ public class Exe19 {
 
 		int numAlunos;
 		int soma = 0;
-		boolean invalido = true;
-
+		
+		
+		boolean valido = false;
 		for (int i = 1; i <=numTurmas; i++) {
 
-			invalido = true;
+			valido = true;
 			do {
 				System.out.println("Entre com numero de alunos da turma" + i);
 				numAlunos = scan.nextInt();
 
 				if (numAlunos <= 40) {
-					invalido = false;
+					valido = false;
 				} else {
 					System.out.println("Numero de alunos invalidos digite novamente");
 				}
-			} while (invalido);
+			} while (valido);
 			soma += numAlunos;
 		}
 		double media = soma / numTurmas;
