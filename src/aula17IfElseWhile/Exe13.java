@@ -23,9 +23,12 @@ public class Exe13 {
 		
 		for (int i=1; i<exp; i++) {   //para 1 t ate menor que expoente conte 1
 			resultado *= base;         // resulta vai ser multiplicado e igual a base
+			
+			System.out.println("Resultado e = " + resultado);
+		
 		}
 		
-		System.out.println("Resultado e = " + resultado);
+		
 	}
 
 }
