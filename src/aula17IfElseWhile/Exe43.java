@@ -24,7 +24,7 @@ public static void main(String[] args) {
 	
 	Scanner scanner = new Scanner(System.in);
 	
-	boolean naoTerminar = true;
+	boolean Terminar = false;
 	int cod, qtd;
 	int total = 0;
 	String output = "";
@@ -37,7 +37,7 @@ public static void main(String[] args) {
 	qtd = scanner.nextInt();
 	
 	if(cod == 0 && qtd == 0) { //02 Se o código é zero e qtd zero então nao terminar é falso
-		naoTerminar = false;	
+		Terminar = true;	
 		output += "Total a pagar = " + total;
 	
 	}else {
@@ -71,7 +71,7 @@ public static void main(String[] args) {
 		
 	}
 		
-	}while(naoTerminar);     //01 Enquanto terminar executa novamente
+	}while(!Terminar);     //01 Enquanto terminar executa novamente
 	
 	System.out.println(output);
 }
